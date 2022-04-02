@@ -5,9 +5,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="img/xfavicon.png.pagespeed.ic.z1xzoLqtN4.png" type="image/png">
-<title>Sintec Construction</title>
+<title>Technosys</title>
 
 <link rel="stylesheet" href="css1.css" />
+<link rel="stylesheet" href="slideshow.css" />
 
 <link rel="stylesheet" href="css/A.style.css%2bresponsive.css%2cMcc.NFhq7--Vhz.css.pagespeed.cf.xR3h0yy_Sg.css" />
 </head>
@@ -44,9 +45,9 @@
 
 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 <ul class="nav navbar-nav menu_nav ml-auto">
-<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="index.html#services">services</a></li>
+<li class="nav-item active"><a class="nav-link" href="index.html#services">services</a></li>
 <li class="nav-item"><a class="nav-link" href="index.html#portfolio">projects</a></li>
 <li class="nav-item"><a class="nav-link" href="index.html#team">Team</a></li>
 <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
@@ -86,7 +87,37 @@
 <div class="col-lg-8 posts-list">
 <div class="single-post">
 <div class="feature-img">
-<img class="img-fluid" src="img/blog/main-blog/xm-blog-1.jpg.pagespeed.ic.Fwk-gqJS2v.jpg" alt="">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/blog/main-blog/xm-blog-1.jpg.pagespeed.ic.Fwk-gqJS2v.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/blog/main-blog/xm-blog-1.jpg.pagespeed.ic.Fwk-gqJS2v.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/blog/main-blog/xm-blog-1.jpg.pagespeed.ic.Fwk-gqJS2v.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
 </div>
 
 <div class="blog_details">
@@ -266,16 +297,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script>eval(mod_pagespeed_fUUgvwFc0s);</script>
 <script>eval(mod_pagespeed_myr6f_p6kc);</script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+let slideIndex = 0;
+showSlides();
 
-  gtag('config', 'UA-23581568-13');
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active2";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6f399cff1dde89f0","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from preview.colorlib.com/theme/sintec/single-blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Mar 2022 15:25:20 GMT -->
 </html>
