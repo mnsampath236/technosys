@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -2281,6 +2282,12 @@ button.close {
 }
 .ti-email:before {
 	content: "\e75a";
+}
+.ti-mobile:before {
+	content: "\e621";
+}
+.ti-map-alt:before {
+	content: "\e691";
 }
 .ti-world:before {
 	content: "\e665";
